@@ -3,7 +3,8 @@ import { FiArrowRight } from 'react-icons/fi'
 
 import './styles.scss';
 
-import logoImg from '../../assets/landing.svg';
+import logoImg from '../../assets/logo.svg';
+import { Link } from 'react-router-dom';
 
 const Landing = () => {
     return (
@@ -21,9 +22,9 @@ const Landing = () => {
                     <span>Recife</span>
                 </div>
 
-                <a href="teste" className="enter-app">
+                <Link to="/app" className="enter-app">
                     <FiArrowRight size={26} color="rgba(0,0,0, 0.6)" />
-                </a>
+                </Link>
             </div>
         </div>
     );
